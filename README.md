@@ -12,6 +12,8 @@
   </a>
   <h2 align="center">Data Structures and Algorithms</h2>
   <p align="center">
+    Some interpretations and examples of the implementations, of the Data Structures and Algorithms (Recursion, Search, Short, etc).
+    <br />
     <a href="https://github.com/kevocde/data-structures-algorithms-py"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -20,9 +22,6 @@
     <a href="https://github.com/kevocde/data-structures-algorithms-py/issues">Request Feature</a>
   </p>
 </div>
-
-### About The Project
-Some interpretations and examples of the implementations, of the Data Structures and Algorithms (Recursion, Search, Short, etc).
 
 ### Built with
 [![Python][Python.com]][Python-url] [![Numpy][Numpy.com]][Numpy-url]
