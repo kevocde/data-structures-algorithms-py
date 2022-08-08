@@ -1,6 +1,5 @@
 # Implementación de algoritmo de ordenamiento por insersión
 
-
 def insertion_sort(data):
     for i in range(1, len(data)):
         value = data[i]
