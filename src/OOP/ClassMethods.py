@@ -15,7 +15,7 @@ class Human:
 
     @classmethod
     def create_male(cls, full_name, age):
-        return Human(full_name, 'male', age)
+        return cls(full_name, 'male', age)
 
 
 human1 = Human.create_male('Kevin Guzman', 24)
