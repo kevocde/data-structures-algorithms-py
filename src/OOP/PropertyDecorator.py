@@ -13,6 +13,10 @@ class Person:
             raise ValueError('The name cannot be empty')
         self._name = value
 
+    @name.deleter
+    def name(self):
+        del self._name
+
     @property
     def age(self):
         return self._age
@@ -22,6 +26,10 @@ class Person:
         if value <= 0:
             raise ValueError('The age must be positive')
         self._age = value
+
+    @age.deleter
+    def name(self):
+        del self._age
 
     def __str__(self):
         return f'Person({self.name}, {self.age})'
