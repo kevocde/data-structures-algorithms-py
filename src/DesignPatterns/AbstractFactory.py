@@ -1,5 +1,5 @@
 """
-AbstractFactory es un patrón de diseño creacional, el cual resuelte tle preblema de crear
+AbstractFactory es un patrón de diseño creacional, el cual resuelte el problema de crear
 grupos de objetos (entidades), de un tipo o familia específicos sin especificar sus clases concretamente.
 
 El siguiente es la implementación del patrón en una tienda de muebles:
