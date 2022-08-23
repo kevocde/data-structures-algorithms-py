@@ -51,30 +51,30 @@ class FournitureFactory(ABC):
         pass
 
 
-class ModermChair(Chair):
+class ModernChair(Chair):
     def sit(self) -> str:
-        return 'You are sitting on a moderm chair'
+        return 'You are sitting on a Modern chair'
 
 
-class ModermSofa(Sofa):
+class ModernSofa(Sofa):
     def sit(self) -> str:
-        return 'Your are sitting on a moderm sofa'
+        return 'Your are sitting on a Modern sofa'
 
 
-class ModermTable(Table):
+class ModernTable(Table):
     def serve(self) -> str:
-        return 'You are serving on a moderm table'
+        return 'You are serving on a Modern table'
 
 
-class FournitureModermFactory(FournitureFactory):
-    def createChair(self) -> ModermChair:
-        return ModermChair()
+class FournitureModernFactory(FournitureFactory):
+    def createChair(self) -> ModernChair:
+        return ModernChair()
 
-    def createSofa(self) -> ModermSofa:
-        return ModermSofa()
+    def createSofa(self) -> ModernSofa:
+        return ModernSofa()
 
-    def createTable(self) -> ModermTable:
-        return ModermTable()
+    def createTable(self) -> ModernTable:
+        return ModernTable()
 
 
 def client_code(factory: FournitureFactory):
@@ -90,8 +90,9 @@ def client_code(factory: FournitureFactory):
 
 
 if __name__ == '__main__':
-    products = client_code(FournitureModermFactory())
+    products = client_code(FournitureModernFactory())
 
+    print('Customer requested a complete modern set:')
     print(products['chair'].sit())
     print(products['sofa'].sit())
     print(products['table'].serve())
