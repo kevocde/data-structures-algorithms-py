@@ -44,7 +44,7 @@ class Contact:
 
 class NotificationManager:
     def __init__(self, notification):
-        self._notification = notification
+        self.notification = notification
 
     @property
     def notification(self):
