@@ -3,7 +3,7 @@ El patrón de diseño Bridge, permite reducir la complejidad de añadir mas y ma
 código ya existente.
 """
 import math
-from abc import ABC, abstractmethod, abstractproperty
+from abc import ABC, abstractmethod
 
 
 class Color(ABC):
