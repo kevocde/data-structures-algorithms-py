@@ -7,13 +7,12 @@ Ejemplo:
     formatos diferentes, el primero en json y el segundo en xml, el API devuelve los datos en formato JSON, así que
     se necesitará un adaptador para poder traducir esta información.
 """
-import json
 import requests
 
 from dict2xml import dict2xml
 
 
-class PokemonAPI():
+class PokemonAPI:
     API_URL = 'https://pokeapi.co/api/v2'
     PAGINATOR_LIMIT = 20
 
@@ -30,7 +29,7 @@ class PokemonAPI():
         return response.json() if response.status_code == 200 else {}
 
 
-class PokemonAPIAdapter():
+class PokemonAPIAdapter:
     def __init__(self, pokemonapi_inst: PokemonAPI):
         self._pokemonAPI = pokemonapi_inst
 
